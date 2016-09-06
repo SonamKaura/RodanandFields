@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 02 13:14:35 IST 2016</td>
+<td>Started on:</td><td>Tue Sep 06 22:58:22 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (43 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,13 +77,14 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.gspann.RodanTest.startup()'><b>startup</b><br>Test class: com.gspann.RodanTest</td>
 <td><div><pre>org.testng.TestNGException: 
-Method startup requires 1 parameters but 0 were supplied in the @Configuration annotation.
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95060556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace95060556'><pre>org.testng.TestNGException: 
-Method startup requires 1 parameters but 0 were supplied in the @Configuration annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+Parameter &apos;browser&apos; is required by @Configuration on method startup but has not been marked @Optional or defined
+
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391045829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391045829'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by @Configuration on method startup but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
@@ -114,7 +115,7 @@ Method startup requires 1 parameters but 0 were supplied in the @Configuration a
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 </pre></div></td>
 <td>0</td>
-<td>com.gspann.RodanTest@232934a1</td></tr>
+<td>com.gspann.RodanTest@52603c9f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -127,7 +128,12 @@ Method startup requires 1 parameters but 0 were supplied in the @Configuration a
 <td title='com.gspann.RodanTest.Homepage()'><b>Homepage</b><br>Test class: com.gspann.RodanTest</td>
 <td></td>
 <td>0</td>
-<td>com.gspann.RodanTest@232934a1</td></tr>
+<td>com.gspann.RodanTest@52603c9f</td></tr>
+<tr>
+<td title='com.gspann.RodanTest.consultant()'><b>consultant</b><br>Test class: com.gspann.RodanTest</td>
+<td></td>
+<td>0</td>
+<td>com.gspann.RodanTest@52603c9f</td></tr>
 </table><p>
 </body>
 </html>

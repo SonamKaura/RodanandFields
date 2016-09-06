@@ -16,12 +16,13 @@ this .driver=d;
 
 private By shopskinCareLoc=By.xpath("//span[@class='icon-search']/preceding::a[@id='our-products']");
 private By allProductsLoc=By.xpath("//span[@class='icon-search']/preceding::a[@title='All Products']");
-private By refineCheckboxLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[1]/ul/li[1]/form/div/div/div[2]/div");
-private By redefineCheckboxLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[1]/ul/li[2]/form/div/div/div[2]/div");
-private By priceDropDownLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[2]/ul/li[2]/form/div/div[1]/div[2]/div");
+private By refineByDropLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[1]");
+By redefineLoc=By.xpath("//div[@class='dropdown-wrapper']//li[1]//div[@class='pull-right']/div");
+By reverseLoc=By.xpath("//ul[@class='refine-products select-dropdown open']/li[2]//div[@class='repaired-checkbox']");
+private By priceDropDownLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[2]");
+private By priceSelectLoc=By.xpath("//div[@id='main-content']/div[2]/div[2]/div[2]/ul//li[2]/form/div/div[1]/div[2]/div");
 private By RefineRedefineverifyLoc=By.xpath("//div[@id='main-content']/div[2]/div[3]/div/ul[2]");
 private By PriceLoc=By.xpath("//section[@class='row main-content productCatPage']/div[1]/div/div[5]/div[1]/p/span");
-
 
 
 public void clickSkinCare() throws InterruptedException
@@ -46,17 +47,27 @@ public void clickallProduct() throws InterruptedException
 	Thread.sleep(4000);
 }
 
-public void refineCheckbox() throws InterruptedException
+public void refineByDropdown() throws InterruptedException
 {
-	WebElement refineCheck=driver.findElement(refineCheckboxLoc);
+	WebElement refineCheck=driver.findElement(refineByDropLoc);
 	refineCheck.click();
 	Thread.sleep(4000);
 	
 }
 
+
 public void redefineCheckbox() throws InterruptedException
 {
-	WebElement redefineCheck=driver.findElement(redefineCheckboxLoc);
+	WebElement redefineCheck=driver.findElement(redefineLoc);
+	redefineCheck.click();
+	Thread.sleep(4000);
+	
+}
+
+
+public void reverseCheckbox() throws InterruptedException
+{
+	WebElement redefineCheck=driver.findElement(reverseLoc);
 	redefineCheck.click();
 	Thread.sleep(4000);
 	
@@ -66,6 +77,13 @@ public void PriceDropDown() throws InterruptedException
 {
 	WebElement PriceDrop=driver.findElement(priceDropDownLoc);
 	PriceDrop.click();
+	Thread.sleep(4000);
+}
+
+public void selectPrice() throws InterruptedException
+{
+	WebElement priceselect=driver.findElement(priceSelectLoc);
+	priceselect.click();
 	Thread.sleep(4000);
 }
 

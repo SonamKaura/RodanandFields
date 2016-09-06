@@ -10,6 +10,7 @@
     <classes>
       <class name="com.gspann.RodanTest">
         <methods>
+          <include name="consultant"/>
           <include name="Homepage"/>
         </methods>
       </class> <!-- com.gspann.RodanTest -->

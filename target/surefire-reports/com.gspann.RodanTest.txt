@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.gspann.RodanTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.494 sec <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.556 sec <<< FAILURE!
 startup(com.gspann.RodanTest)  Time elapsed: 0 sec  <<< FAILURE!
 org.testng.TestNGException: 
-Method startup requires 1 parameters but 0 were supplied in the @Configuration annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+Parameter 'browser' is required by @Configuration on method startup but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
 	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)

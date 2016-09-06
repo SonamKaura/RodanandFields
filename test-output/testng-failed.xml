@@ -5,7 +5,7 @@
     <classes>
       <class name="com.gspann.RodanTest">
         <methods>
-          <include name="Homepage"/>
+          <include name="consultant"/>
         </methods>
       </class> <!-- com.gspann.RodanTest -->
     </classes>
@@ -14,8 +14,7 @@
     <classes>
       <class name="com.gspann.RodanTest">
         <methods>
-          <include name="startup"/>
-          <include name="Homepage"/>
+          <include name="consultant"/>
         </methods>
       </class> <!-- com.gspann.RodanTest -->
     </classes>
